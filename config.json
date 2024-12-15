@@ -1,0 +1,12 @@
+{
+    "domains":[
+        {
+            "domain_url":"https://www.amazon.in",
+            "iteration_max_page_visits": 100
+        },
+        {
+            "domain_url":"https://www.flipkart.com/",
+            "iteration_max_page_visits": 100
+        }
+    ]
+}

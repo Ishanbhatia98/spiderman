@@ -1,10 +1,30 @@
 # E-Commerce Web Crawler
 
-## Overview
-A simple web crawler designed to list product pages for e-commerce websites.
+## Prerequisites
+- Python 3.8+
+- pip
+- venv (virtual environment module)
 
-## Installation
-Ensure you have Python 3 installed and set up the project environment.
+## Setup Instructions
+
+### 1. Create a Virtual Environment
+```bash
+# Create a virtual environment
+python3 -m venv webcrawler-env
+
+# Activate the virtual environment
+# On macOS and Linux:
+source webcrawler-env/bin/activate
+
+# On Windows:
+webcrawler-env\Scripts\activate
+```
+
+### 2. Install Required Packages
+```bash
+# Ensure you're in the project directory and virtual environment
+pip3 install -r requirements.txt
+```
 
 ## Usage Commands
 
@@ -25,6 +45,12 @@ Synchronizes and appends results from cache.
 python3 -m app.clear_cache
 ```
 Removes all cached crawling data.
+
+## Deactivating Virtual Environment
+When you're done working on the project:
+```bash
+deactivate
+```
 
 ## Configuration
 
@@ -71,6 +97,15 @@ Removes all cached crawling data.
 - By default, the crawler will visit 100 pages per domain
 - This can be customized using the `max_page_visits_in_iteration` key in the configuration
 
+## Recommended Workflow
+1. Create virtual environment
+2. Activate environment
+3. Install requirements
+4. Configure `config.json`
+5. Run the crawler
+6. Deactivate environment when done
+
 ## Notes
+- Always activate the virtual environment before working on the project
 - Ensure `config.json` is properly configured before running the crawler
 - Adjust `purchase_button_keywords` and `product_page_regex_patterns` to match specific e-commerce website structures
